@@ -1,0 +1,48 @@
+######## INITIALIZATION ########
+LED SETUP
+# Use RNDIS for Windows. Mac/*nix use ECM_ETHERNET
+ATTACKMODE RNDIS_ETHERNET
+#ATTACKMODE ECM_ETHERNET
+
+######## ATTACK PHASE (WINDOWS RUN PROMPT) ########
+# Use this version if user cannot use CMD (lacking perms or something similar)
+LED ATTACK
+# Open run prompt
+Q GUI r
+Q DELAY 200
+# Open web browser
+Q STRING microsoft-edge://
+#Q STRING chrome
+Q ENTER
+Q DELAY 100
+# Enter RickRoll link & enter it
+Q STRING https://www.youtube.com/watch?v=dQw4w9WgXcQ
+Q ENTER
+
+######## ATTACK PHASE (WINDOWS CMD) ########
+#LED ATTACK
+# Open CMD
+#Q GUI r
+#Q DELAY 200
+#Q STRING cmd
+#Q DELAY 100
+#Q ENTER
+#Q DELAY 100
+# Opens default web browser with video, cleans up cmd window
+#Q STRING start https://www.youtube.com/watch?v=dQw4w9WgXcQ && exit
+#Q ENTER
+
+######## ATTACK PHASE OSX / *nix) ########
+#LED ATTACK
+#Q GUI SPACE
+#Q DELAY 200
+#Q STRING terminal
+#Q DELAY 100
+#Q ENTER
+#Q DELAY 1000
+#Q GUI n
+#Q DELAY 1000
+#Q STRING open https://www.youtube.com/watch?v=dQw4w9WgXcQ && exit
+
+######## FINISH ########
+LED FINISH
