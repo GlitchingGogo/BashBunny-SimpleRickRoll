@@ -1,6 +1,6 @@
 # BashBunny-SimpleRickRoll
 - Author: GlitchingGogo
-- Props: Hak5 Dev Team, Hak5Darren, Jafahulo
+- Props: Hak5 Dev Team, Hak5Darren, Jafahulo, kuyaya
 - Version: Version 1.1
 - Target OS: Windows & OSX / *nix
 - Target Browsers: New Microsoft Edge & Chrome (Windows Run Prompt), Any Browser Set As Default (Windows CMD & OSX / *nix)
@@ -13,9 +13,7 @@ Simple RickRoll script for the bash bunny with functionality for all OS types.
 - Step 03. Payload opens browser via cmd, run, etc. (set in payload.txt) and covers tracks
 - Step 04. Profit (by rickrolling your victim)
 ## Configuration
-Configured for Windows by default. Swap RNDIS_ETHERNET for ECM_ETHERNET on Mac/*nix.
-Windows Run Prompt version has options
-Comment out all lines in a section you want disabled to ensure the payload functions.
+Change variable from WIN to NIX to configure.
 Bunny should auto-eject on payload finish.
 ## STATUS
 | LED                | Status                                       |
