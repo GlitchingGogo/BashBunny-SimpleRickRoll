@@ -23,4 +23,4 @@ Bunny should auto-eject on payload finish.
 | SETUP              | Setting Up Attack                            |
 | FINISH             | Attack Complete                              |
 ## Discussion
-[Hak5 Forum Thread]
+[Hak5 Forum Thread] https://forums.hak5.org/topic/54117-payload-simple-rickroll-prank/ (Hak5 Forums)
