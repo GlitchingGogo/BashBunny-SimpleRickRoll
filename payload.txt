@@ -10,25 +10,20 @@ if [ $os == "WIN" ]
 then
 LED ATTACK
 # Change microsoft-edge: to google-chrome: if needed
-RUN WIN microsoft-edge:https://www.youtube.com/watch?v=dQw4w9WgXcQ
+RUN WIN microsoft-edge: https://www.youtube.com/watch?v=dQw4w9WgXcQ
 
 # Checking for OS variable == NIX
 elif [ $os == "NIX" ]
 then
 LED ATTACK
-Q GUI SPACE
-Q DELAY 200
-Q STRING terminal
-Q DELAY 100
-Q ENTER
-Q DELAY 1000
-Q GUI n
-Q DELAY 1000
+RUN OSX terminal
 Q STRING open https://www.youtube.com/watch?v=dQw4w9WgXcQ && exit
 
 # Fail state if neither is true
 else
 LED FAIL2
+
+fi
 
 ######## FINISH ########
 LED FINISH
